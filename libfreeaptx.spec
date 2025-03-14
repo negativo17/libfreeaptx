@@ -1,12 +1,11 @@
 Name:       libfreeaptx
-Version:    0.1.1
+Version:    0.2.2
 Release:    1%{?dist}
 Summary:    Free implementation of Audio Processing Technology codec (aptX)
 License:    LGPLv2+
-URL:        https://github.com/iamthehorker/%{name}
+URL:        https://github.com/regularhunter/%{name}
 
 Source0:    %{url}/archive/refs/tags/%{version}.tar.gz#/%{name}-%{version}.tar.gz
-Patch0:     %{url}/commit/c176b7de9c2017d0fc1877659cea3bb6c330aafa.patch
 
 BuildRequires:  gcc
 BuildRequires:  make
@@ -59,5 +58,9 @@ The %{name}-tools package contains command line encoder and decoder utilities.
 %{_bindir}/freeaptxdec
 
 %changelog
+* Fri Mar 14 2025 Simone Caronni <negativo17@gmail.com> - 0.2.2-1
+- Update to 0.2.2.
+- Update URL.
+
 * Thu Sep 23 2021 Simone Caronni <negativo17@gmail.com> - 0.1.1-1
 - First build.
